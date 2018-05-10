@@ -1,0 +1,33 @@
+[
+    {
+        "firstName": "Mark",
+        "lastName": "Nutt",
+        "username": "mark.nutt",
+        "homeLoc" : "London, England",
+        "currentLoc" : "home",
+        "following":[
+            "cptRogers",
+            "starlord_6969"
+        ]
+    },
+    {
+        "firstName": "Steve",
+        "lastName": "Rogers",
+        "username": "cptRogers",
+        "homeLoc":  "Brooklyn, New York",
+        "currentLoc" : "Stuttgart, Germany",
+        "following":[
+            "starlord_6969"
+        ]
+    },
+    {
+        "firstName": "Peter",
+        "lastName": "Quill",
+        "username": "starlord_6969",
+        "homeLoc":  "Missouri, USA",
+        "currentLoc" : "Questionable, Titan",
+        "following":[
+            "cptRogers"
+        ]
+    }
+]
