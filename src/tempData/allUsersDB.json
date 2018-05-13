@@ -1,8 +1,10 @@
-[
+{
+    "users" : [
     {
-        "firstName": "Mark",
-        "lastName": "Nutt",
-        "username": "mark.nutt",
+        "firstName": "Peter",
+        "lastName": "Parker",
+        "username": "theAmazingPP",
+        "profileImage": "https://78.media.tumblr.com/avatar_7566619d74af_128.pnj",
         "homeLoc" : "London, England",
         "currentLoc" : "home",
         "following":[
@@ -14,6 +16,7 @@
         "firstName": "Steve",
         "lastName": "Rogers",
         "username": "cptRogers",
+        "profileImage": "https://pbs.twimg.com/profile_images/685896589362216963/N2j7Rc9E_400x400.png",
         "homeLoc":  "Brooklyn, New York",
         "currentLoc" : "Stuttgart, Germany",
         "following":[
@@ -24,10 +27,35 @@
         "firstName": "Peter",
         "lastName": "Quill",
         "username": "starlord_6969",
+        "profileImage": "https://a.wattpad.com/useravatar/Peter-Quill.128.700448.jpg",
         "homeLoc":  "Missouri, USA",
         "currentLoc" : "Questionable, Titan",
         "following":[
             "cptRogers"
         ]
-    }
-]
+    },
+    {
+        "firstName": "Tony",
+        "lastName": "Stark",
+        "username": "genius.playboy",
+        "profileImage": "https://a.wattpad.com/useravatar/Tony__Stark.256.17740.jpg",
+        "homeLoc":  "New York, USA",
+        "currentLoc" : "Questionable, Titan",
+        "following":[
+            "cptRogers",
+            "theincrediblehulk"
+        ]
+    },
+    {
+        "firstName": "Bruce",
+        "lastName": "Banner",
+        "username": "imAlwaysHangry",
+        "profileImage": "https://i.pinimg.com/236x/58/6d/c0/586dc0d6bc36a5a8dec778a282c8b707--mark-ruffalo-tumblr-funny.jpg",
+        "homeLoc":  "New York, New York",
+        "currentLoc" : "Area, Sakaar",
+        "following":[
+            "cptRogers",
+            "genius.playboy"
+        ]
+    }]
+}
