@@ -20,13 +20,11 @@ class App extends Component {
   
   addFollowUser(user){
     this.setState(prevState => ({
-      //following: this.state.following.concat([user])
       following: [...prevState.following, user]
     }));
   }
   removeFollowUser(user){
     this.setState(prevState => ({
-      //following: this.state.following.concat([user])
       following: prevState.following.filter((_,i) => i !== prevState.following.indexOf(user))
     }));
   }
