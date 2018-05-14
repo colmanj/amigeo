@@ -7,7 +7,8 @@ class FollowList extends Component {
     render() {
         return (
             <div>
-                {this.props.following.map(user => <FriendRow {...user}/>)}
+                <h1>You are now following: </h1>
+                {this.props.following.map( (user,i) => <FriendRow key={i} {...user}/>)}
             </div>
         );
     }

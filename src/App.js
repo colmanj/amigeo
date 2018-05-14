@@ -8,12 +8,27 @@ import FollowList from "./FollowList";
 //import './App.css';
 
 let usersDB = require('./tempData/allUsersDB.json');
-let following = { "users": []}
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+        following:[]
+    };
+    this.addFollowUser = this.addFollowUser.bind(this);
+    this.removeFollowUser = this.removeFollowUser.bind(this);
+  }
   
   addFollowUser(user){
-    following.users.push(user);
-    console.log(following);
+    this.setState(prevState => ({
+      //following: this.state.following.concat([user])
+      following: [...prevState.following, user]
+    }));
+  }
+  removeFollowUser(user){
+    this.setState(prevState => ({
+      //following: this.state.following.concat([user])
+      following: prevState.following.filter((_,i) => i !== prevState.following.indexOf(user))
+    }));
   }
 
   render() {
@@ -32,8 +47,8 @@ class App extends Component {
             </div>
           </div>
         </HashRouter>
-        <AllUsers users={usersDB.users} addFollowUser={this.addFollowUser}/>
-        <FollowList following = {following.users} />
+        <AllUsers following={this.state.following} users={usersDB.users} addFollowUser={this.addFollowUser} removeFollowUser={this.removeFollowUser}/>
+        <FollowList following = {this.state.following} />
       </div>
     );
   }

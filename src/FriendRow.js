@@ -10,7 +10,7 @@ class FriendRow extends Component {
                         @{this.props.username}
                     </div>
                     <div>
-                        {this.props.firstName}{this.props.lastName}
+                        {this.props.firstName}&nbsp;{this.props.lastName}
                     </div>
                 </div>
             </div>
